@@ -13,10 +13,8 @@
 
 for (i = 0; i < 6; i++) {
     let f = "*";
-    console.log(f.repeat(i));
+    console.log("*".repeat(i));
 }
-
-
 
 
 // ==========================================
@@ -30,7 +28,13 @@ for (i = 0; i < 6; i++) {
 // ==========================================
 
 
-
+for (i = 0; i < 6; i++) {
+    if(i === 5){
+        console.log("klaar!")
+    }else {
+        console.log("Loop...");
+    }
+}
 
 
 // ==========================================
@@ -47,9 +51,22 @@ for (i = 0; i < 6; i++) {
 // >> 7
 // >> 8
 // >> 9
-// ==========================================
+// ==========================================//
 
+// stap 1 forloop  >10
+// stap 2 if statements 0>3
+// stap 3  if els  3-5
+// stap 4 else  >6
 
+for (i = 0; i < 10; i++) {
+    if(i <= 2){
+        console.log(i);
+    } else if (i <= 5){
+        console.log(">"+i);
+    }else {
+        console.log(">>"+i);
+    }
+}
 
 
 
@@ -91,5 +108,19 @@ for (i = 0; i < 6; i++) {
 // etc.
 // ==========================================
 
+// stap 1 forloop 0 tot 100
+// stap 2 if /3 = fizz
+// stap 3 else if  / 5 = buzz
+// stap 4 voor FizzBuss in door bijde oplossingen samen te voegen met een &&
 
-
+for (i = 1; i < 101; i++) {
+    if (i % 3 == false && i % 5 == false){
+        console.log("FizzBuzz");
+    } else if ( i % 3 == false){
+        console.log("Fizz");
+    } else if ( i % 5 == false){
+        console.log("Buzz");
+    } else {
+        console.log(i);
+    }
+}
